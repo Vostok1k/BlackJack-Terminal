@@ -94,6 +94,7 @@ public:
             cout << " _______\n| " << carta+1 << "     |\n|       |\n|   " << nombres[palo] << "   |\n|       |\n|_______|\n\n";
         }
         if (carta == 0 && esTurnoJugador) {
+            as = 0;
             while (as != 11 && as != 1) {
                 cout << "\nQue valor quieres que tenga el AS, 1 o 11?\n";
                 cout << "Valor: ";
@@ -153,7 +154,7 @@ int main() {
             }
         }
         if (repeat == 'N') {
-            while (croupier.balance < 21 && croupier.balance < jugador.balance){
+            while (croupier.balance < 21 && croupier.balance <= jugador.balance){
                 croupier.Turno(false);
             }            
         }
@@ -168,9 +169,9 @@ int main() {
             cout << "\t\t\t\t\t\t-------------------\n\n";
         }
         else { // empates
-            cout << "\n\t\t\t\t\t\t------------------\n";
-            cout << "\t\t\t\t\t\t| Has ganado! :) |\n";
-            cout << "\t\t\t\t\t\t------------------\n\n";
+            cout << "\n\t\t\t\t\t\t-------------------\n";
+            cout << "\t\t\t\t\t\t| Habeis empatado |\n";
+            cout << "\t\t\t\t\t\t-------------------\n\n";
         }    
     return 0;
 }

@@ -1,17 +1,18 @@
 # Blackjack en C++
 
-Este es un juego simple de Blackjack implementado en C++. El juego permite a un jugador competir contra un crupier controlado por la computadora.
+Este es un juego simple de Blackjack implementado en C++. El juego permite a un jugador competir contra un crupier controlado por el ordenador.
 
 ## Requisitos del sistema
 
 - Compilador C++ compatible
-
+- Windows (se utiliza la biblioteca `windows.h` para reproducir sonido)
+  
 ## Instrucciones de uso
 
 1. Clona el repositorio o descarga el archivo `BlackJack.cpp`.
 2. Compila el código fuente utilizando un compilador C++ compatible.
-3. Ejecuta el archivo compilado.
-4. Sigue las instrucciones en la consola para jugar al Blackjack.
+3. Ejecuta el archivo compilado con `./blackjack`.
+4. Sigue las instrucciones en la consola para jugar a Blackjack.
 
 ## Características del juego
 
